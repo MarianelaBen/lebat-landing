@@ -138,7 +138,7 @@
   animation: float 4s ease-in-out infinite;
 }
 .badge-top  { top: -18px; right: -18px; }
-.badge-bottom { bottom: 28px; left: -28px; animation-delay: 2s; }
+.badge-bottom {left: -28px; animation-delay: 2s; }
 .badge-icon { display: flex; }
 .badge-text { font-size: 0.78rem; font-weight: 600; color: var(--gris-oscuro); }
 .badge-sub  { font-size: 0.68rem; color: var(--gris-medio); }
