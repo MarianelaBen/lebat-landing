@@ -21,14 +21,6 @@ export default function Valoraciones() {
           <div className="section-label">Lo que dicen nuestros pacientes</div>
           <h2 className="section-title">Valoraciones</h2>
         </div>
-        <div className="rating-general">
-          <div className="rating-num">5.0</div>
-          <div>
-            <div className="rating-stars">★★★★★</div>
-            {/* 📝 Reemplazar [X] con el número real de valoraciones */}
-            <div className="rating-sub">Basado en [X] valoraciones</div>
-          </div>
-        </div>
       </div>
 
       <div className="valoraciones-grid">

@@ -4,29 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 56px;
   flex-wrap: wrap;
   gap: 20px;
 }
-
-.rating-general {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: var(--blanco);
-  padding: 20px 28px;
-  border-radius: 18px;
-  box-shadow: var(--sombra);
-}
-.rating-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--azul-oscuro);
-  line-height: 1;
-}
-.rating-stars { color: #f5a623; font-size: 1.1rem; letter-spacing: 2px; }
-.rating-sub { font-size: 0.78rem; color: var(--gris-medio); margin-top: 3px; }
 
 .valoraciones-grid {
   display: grid;

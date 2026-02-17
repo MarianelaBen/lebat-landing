@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
-  margin-top: 64px;
+  align-items: start;
+  margin-top: 30px;
 }
 
 /* ── Fotos ── */
@@ -135,5 +135,4 @@
 
 @media (max-width: 900px) {
   .quienes-inner { grid-template-columns: 1fr; }
-  .quienes-fotos { margin-bottom: 32px; }
 }

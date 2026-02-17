@@ -25,7 +25,6 @@ export default function Galeria() {
             {item.placeholder ? (
               <>
                 <PlaceholderIcon />
-                <p>Tu foto aquí</p>
               </>
             ) : (
               <>

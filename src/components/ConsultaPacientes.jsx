@@ -28,15 +28,16 @@ export default function ConsultaPacientes() {
 
   return (
     <section id="consulta" className="consulta-pacientes">
-      <div className="section-label">Pacientes</div>
-      <h2 className="section-title">¿Tenés alguna consulta?</h2>
-      <p className="section-sub">
-        Completá el formulario y te respondemos a la brevedad. También podés escribirnos directamente por WhatsApp.
-      </p>
+
 
       <div className="consulta-inner">
         {/* ── Info ── */}
         <div className="consulta-info">
+                <div className="section-label">Pacientes</div>
+      <h2 className="section-title">¿Tenés alguna consulta?</h2>
+      <p className="section-sub">
+        Completá el formulario y te respondemos a la brevedad. También podés escribirnos directamente por WhatsApp.
+      </p>
           <h3>Sin compromiso</h3>
           <p>Antes de coordinar cualquier servicio, podés hacernos todas las preguntas que necesites, sin costo ni obligación.</p>
           <h3>Respuesta rápida</h3>

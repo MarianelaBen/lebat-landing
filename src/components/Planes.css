@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 56px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
-  gap: 20px;
+
 }
 
 .planes-grid {

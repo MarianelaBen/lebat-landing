@@ -35,13 +35,18 @@ export default function QuienesSomos() {
 
   return (
     <section id="quienes-somos" className="quienes-somos">
-      <div className="section-label">Nuestra historia</div>
-      <h2 className="section-title">¿Quiénes somos?</h2>
-      <p className="section-sub">
-        LEBAT SALUD nació de una idea simple: la salud de calidad no debería depender de si podés llegar a una clínica.
-      </p>
+
 
       <div className="quienes-inner">
+        <div className="quienes-texto">
+          <div>
+              <div className="section-label">Nuestra historia</div>
+              <h2 className="section-title">¿Quiénes somos?</h2>
+              <p className="section-sub">
+        LEBAT SALUD nació de una idea simple: la salud de calidad no debería depender de si podés llegar a una clínica.
+              </p>
+          </div>
+
         {/* ── Fotos ── */}
         <div className="quienes-fotos">
           <div className="quienes-foto grande">
@@ -74,10 +79,11 @@ export default function QuienesSomos() {
                 <circle cx="8.5" cy="8.5" r="1.5" />
                 <polyline points="21 15 16 10 5 21" />
               </svg>
-              <p>Foto propia del equipo</p>
             </div>
           </div>
         </div>
+        </div>
+
 
         {/* ── Texto ── */}
         <div className="quienes-texto">
