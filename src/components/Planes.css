@@ -1,0 +1,155 @@
+.planes { background: var(--gris-suave); }
+
+.planes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.planes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.plan-card {
+  background: var(--blanco);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  border: 2px solid transparent;
+  transition: all 0.35s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--azul-medio), var(--turquesa));
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.plan-card:hover {
+  border-color: rgba(30,91,138,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(26,46,74,0.14);
+}
+.plan-card:hover::before { opacity: 1; }
+
+.plan-card.featured {
+  background: linear-gradient(145deg, var(--azul-oscuro), var(--azul-medio));
+  color: var(--blanco);
+  border-color: transparent;
+  transform: scale(1.03);
+}
+.plan-card.featured::before { opacity: 1; }
+.plan-card.featured:hover { transform: scale(1.03) translateY(-6px); box-shadow: 0 20px 56px rgba(26,46,74,0.25); }
+
+.plan-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--turquesa);
+  color: var(--blanco);
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.plan-card:not(.featured) .plan-badge { background: var(--turquesa-suave); color: var(--azul-medio); }
+
+.plan-nombre {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--azul-oscuro);
+}
+.plan-card.featured .plan-nombre { color: var(--blanco); }
+
+.plan-descripcion {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  font-weight: 300;
+  color: var(--gris-medio);
+}
+.plan-card.featured .plan-descripcion { color: rgba(255,255,255,0.72); }
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--gris-oscuro);
+}
+.plan-card.featured .plan-features li { color: rgba(255,255,255,0.88); }
+.plan-features li::before {
+  content: '✓';
+  font-weight: 700;
+  color: var(--turquesa);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.plan-precio { margin-bottom: 28px; }
+.plan-precio-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--gris-medio); }
+.plan-card.featured .plan-precio-label { color: rgba(255,255,255,0.6); }
+.plan-precio-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--azul-oscuro);
+}
+.plan-card.featured .plan-precio-num { color: var(--turquesa); }
+.plan-precio-per { font-size: 0.8rem; color: var(--gris-medio); }
+.plan-card.featured .plan-precio-per { color: rgba(255,255,255,0.5); }
+
+.plan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 24px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  background: var(--azul-medio);
+  color: var(--blanco);
+  box-shadow: 0 6px 20px rgba(30,91,138,0.25);
+}
+.plan-btn:hover { background: var(--azul-claro); transform: translateY(-1px); }
+.plan-card.featured .plan-btn { background: var(--turquesa); box-shadow: 0 6px 20px rgba(77,184,200,0.4); }
+.plan-card.featured .plan-btn:hover { background: #5ec8d8; }
+
+.planes-nota {
+  text-align: center;
+  margin-top: 36px;
+  font-size: 0.85rem;
+  color: var(--gris-medio);
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .planes-header { flex-direction: column; align-items: flex-start; }
+}

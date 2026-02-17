@@ -1,40 +1,33 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Plans from "./components/Plans";
-import Addons from "./components/Addons";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Careers from "./components/Careers";
-import Footer from "./components/Footer";
+import './styles/global.css'
+
+import Navbar           from './components/Navbar'
+import Hero             from './components/Hero'
+import Servicios        from './components/Servicios'
+import QuienesSomos     from './components/QuienesSomos'
+import Galeria          from './components/Galeria'
+import Valoraciones     from './components/Valoraciones'
+import Planes           from './components/Planes'
+import ComoFunciona     from './components/ComoFunciona'
+import ConsultaPacientes from './components/ConsultaPacientes'
+import FAQ              from './components/FAQ'
+import Sumate           from './components/Sumate'
+import Footer           from './components/Footer'
 
 export default function App() {
   return (
-    <div className="page">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Plans />
-        <Addons />
-        <Testimonials />
-        <Contact />
-        <Careers />
-      </main>
+    <>
+      <Navbar />
+      <Hero />
+      <Servicios />
+      <QuienesSomos />
+      <Galeria />
+      <Valoraciones />
+      <Planes />
+      <ComoFunciona />
+      <ConsultaPacientes />
+      <FAQ />
+      <Sumate />
       <Footer />
-
-      {/* WhatsApp floating button */}
-      <a
-        className="wa-float"
-        href="https://wa.me/5491122334455?text=Hola%20Lebat%2C%20quiero%20consultar%20por%20servicios%20de%20cuidado."
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Contactar por WhatsApp"
-        title="WhatsApp"
-      >
-        <span className="wa-dot" aria-hidden="true" />
-        WhatsApp
-      </a>
-    </div>
-  );
+    </>
+  )
 }

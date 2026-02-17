@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 5%;
+  background: rgba(247, 249, 252, 0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(26, 46, 74, 0.07);
+  animation: slideDown 0.6s ease;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  letter-spacing: 1px;
+}
+.logo-text span {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--azul-claro);
+  margin-top: -3px;
+}
+
+.nav-scroll-wrap {
+  flex: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.nav-scroll-wrap::-webkit-scrollbar { display: none; }
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  background: var(--gris-suave);
+  border-radius: 50px;
+  padding: 5px;
+  width: max-content;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--gris-medio);
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 7px 16px;
+  border-radius: 50px;
+  transition: all 0.2s;
+}
+.nav-links a:hover {
+  color: var(--azul-oscuro);
+  background: rgba(26, 46, 74, 0.06);
+}
+.nav-links a.active {
+  color: var(--azul-oscuro);
+  background: var(--blanco);
+  box-shadow: 0 1px 6px rgba(26, 46, 74, 0.1);
+  font-weight: 600;
+}
+
+.nav-cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--azul-medio);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(30, 91, 138, 0.25);
+}
+.nav-cta:hover {
+  background: var(--azul-claro);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .navbar { padding: 12px 4%; gap: 12px; }
+}

@@ -1,0 +1,63 @@
+.sumate { background: var(--crema); }
+
+.sumate-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.sumate-desc {
+  font-size: 0.9rem;
+  color: var(--gris-medio);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.perfiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.perfil-tag {
+  background: var(--turquesa-suave);
+  color: var(--azul-medio);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px dashed rgba(26,46,74,0.2);
+  border-radius: 14px;
+  padding: 26px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: var(--blanco);
+}
+.file-upload:hover { border-color: var(--azul-claro); background: var(--turquesa-suave); }
+.file-upload p { font-size: 0.82rem; color: var(--gris-medio); }
+.file-upload strong { color: var(--azul-medio); }
+.file-name { color: var(--azul-medio); font-weight: 600; font-size: 0.82rem; }
+
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 48px 24px;
+}
+.form-success h4 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--azul-oscuro); }
+.form-success p  { font-size: 0.9rem; color: var(--gris-medio); font-weight: 300; }
+
+@media (max-width: 900px) {
+  .sumate-inner { grid-template-columns: 1fr; }
+}
