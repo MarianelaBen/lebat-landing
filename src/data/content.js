@@ -3,10 +3,10 @@
 // ─────────────────────────────────────────────
 
 export const CONFIG = {
-  whatsappNumero: '5491100000000', // ← Reemplazar con número real
-  nombreEmpresa: 'LEBAT SALUD',
+  whatsappNumero: '+54 9 11 7151-1866', // ← Reemplazar con número real
+  nombreEmpresa: 'Lebat',
   zona: 'CABA y GBA',
-  añoFundacion: '2023',
+  añoFundacion: '2026',
 }
 
 export const SERVICIOS = [
